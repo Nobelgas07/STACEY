@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en-US">
+	<body background="vape8.jpg">
+<head>
+	<style>
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<title>Services</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+	
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo"></h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="home.html">ABOUT US</a></li>
+		  <li><a href="services.html">SERVICES</a></li>
+		  <li><a href="gallery.html">GALLERY</a></li>
+		   <li><a href="location.html">OUR LOCATION</a></li>
+		   <li><a href="spec.html">SPECIAL PACKAGE</a></li>
+		  <li><a href="test.html">TESTIMONIALS</a></li>
+        <li><a href="form.html">FORM</a></li>
+		<li><a href="cont.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+<h1><center>Vapor Island will always be at your service 🏖️</center></h1>
+
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats"></h1>
+		<h4 style="color:#00008B; font-size:150%;"> <center>Building of coils &amp; vape mod</h4></center>
+		 <img class="img-responsive" src="vape10.jpg" height="400" width="400" alt="Chania"> 
+      <p></p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats"></h1>
+      <h4 style="color:#00008B; font-size:150%;"><center>Pastry &amp; menthol flavors e-juices (30ml-100ml are available)</h4></center>
+		<img class="img-responsive" src="vape11.jpg" height="400" width="400" alt="Chania">
+      <p></p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats"></h1>
+      <h4 style="color:#00008B; font-size:150%;"><center>Batteries &amp; charger</h4></center>
+		<img class="img-responsive" src="vape12.jpg" height="400" width="400" alt="Chania">
+		<p></p>
+	
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats"></h1>
+		<h4 style="color:#00008B; font-size:150%;"><center>Vape mods set (Full mech &amp; variable)</h4></center>
+		<img class="img-responsive" src="vape13.jpg" height="400" width="400" alt="Chania">
+		<p></p>
+		<br>
+		
+    </div>
+  </div>
+  <table class="table table-dark">
+  <thead>
+    <tr>
+      
+      
+      <th scope="col">Type of Service</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     
+     
+      <td style="color:#00008B; font-size:150%;">Building of coils</td>
+      <td style="color:#00008B; font-size:150%;">Php20</td>
+
+	  
+    </tr>
+    <tr>
+      
+      
+      <td style="color:#00008B; font-size:150%;">Pastry &amp; menthol e-juices (30ml-100ml are available)</td>
+      <td style="color:#00008B; font-size:150%;">Ranges from Php200 - Php500 </td>
+    </tr>
+    <tr>
+      
+      
+      <td style="color:#00008B; font-size:150%;">Batteries and charger</td>
+      <td style="color:#00008B; font-size:150%;">Ranges from Php300-Php800 for batterries and Php300 for charger</td>
+    </tr>
+	<tr>
+      
+     
+      <td style="color:#00008B; font-size:150%;">Vape mods set (Full mech and variable)</td>
+      <td style="color:#00008B; font-size:150%;">Ranges from Php1,200 - Php3,500</td>
+	  </tr>
+	
+  </tbody>
+</table>
+  <!-- Parallax Section -->
+  <section class="banner">
+    <h2 class="parallax"></h2>
+    <p class="parallax_description" style="font-size:200%;"><center>Here are the products and services offered by Vapor Island and their corresponding prices.</center></p>
+  </section>
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3><center>PRODUCTS AND SERVICES</h3></center>
+      <center><img class="img-responsive" src="vape14.jpg" height="400" width="400" alt="Chania"></center> 
+		<br>
+		<br>
+		<br>
+		<p><b>KEEP YOUR HEADS IN THE CLOUDS JUST LIKE IN VAPOR ISLAND!</p></b>
+    </article>
+    <article class="footer_column">
+		<h3><center> OUR LOCATION </center></h3>
+   
+  <!--Google map-->
+<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.8864711450788!2d121.18434477087463!3d14.554972999187642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c0c678cfaa5b%3A0xcbf6c5cdcf912278!2sEnd%20Task%20Net%20Cafe!5e0!3m2!1sen!2sph!4v1578061541601!5m2!1sen!2sph" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+
+<!--Google Maps-->
+    </article>
+  </footer>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">PLEASE LIKE AND MESSAGE OUR FACEBOOK PAGE FOR MORE INFO!:<a href= "https://www.facebook.com/VaporIslandVapeshop/">@VaporIsland</a></div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">Copyright© 2019 
+	<hr>
+	<p></p><b><center>Made by: Juan Miguel Romualdo, SJ Corpuz, and Argon Stacey Oliveros</b><p></p></center>
+	<hr>
+    </div>
+	
+<!-- Main Container Ends -->
+
+</body>
+	</html>
